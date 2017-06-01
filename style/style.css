@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+}
+
+.wrapper {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.header {
+    font-family: "Nunito", sans-serif;
+    font-size:100px;
+}
+
+.search-bar-text {
+    margin-top: 30px;
+    font-family: "Nunito", sans-serif;
+    font-size:30px;
+    height:50px;
+    width: 300px;
+    border: 2px solid #504B46  ;
+    box-shadow: 5px 5px 5px #888888;
+    background: white;
+  
+}
+
+.wiki-list-item  a {
+    color: #504B46;
+}
+.wiki-list-item {
+    padding: 10px 20px 10px 20px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-family: "Nunito", sans-serif;
+    color: #504B46;
+    font-size: 20px;
+    background-color: #FFF59D;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.wiki-list-item :hover {
+    color:#F37B18 ;
+    font-size: 25px;
+    text-decoration: none;
+}

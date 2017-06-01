@@ -1,14 +1,14 @@
 import React from 'react';
-import wikiListItem from './wikiListItem';
-
-const WikiList = (props) => {
-    const wikiListItems = props.keywords.map((keyword) => {
-        return <WikiListItem key={keyword.name} keyword={keyword} /> 
-    });
-    
-    return (
-    <ul className="col-md-4 list-group">
-     {wikiItems}
-    </ul>
-    );
+import WikiListItem from './WikiListItem';
+ 
+export default class WikiList extends React.Component {
+    render() {
+        var results = this.props.results[1].map((result, index) => {
+            return (
+                <WikiListItem key={index} title={this.props.results[1][index]} description={this.props.results[2][index]} url={this.props.results[3][index]}/>
+            );
+        });
+ 
+        return (<div className="result-list">{results}</div>);
+    }
 }
