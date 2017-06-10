@@ -1,22 +1,10 @@
 {
   "name": "wikipedia-viewer",
   "version": "1.0.0",
-  "description": "wikipedia article reseach app" ,
+  "description": "wikipedia article reseach app",
   "main": "index.js",
   "repository": "https://github.com/aaayumi/reactWikiViewer",
-   "devDependencies": {
-   "gh-pages": "^0.12.0",
-   "react-scripts": "0.8.4"
-  },
-  "scripts": {
-   "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "npm run build&&gh-pages -d build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "author": "",
-  "license": "ISC",
+  "homepage": "https://aaayumi.github.io/reactWikiViewer",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.2.1",
@@ -33,8 +21,16 @@
     "webpack": "^1.15.0",
     "webpack-dev-server": "^1.14.0"
   },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --config webpack-production.config.js --progress --profile --colors",
+    "deploy": "npm run build&&gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
+    "debug-log": "^1.0.1",
     "lodash": "^3.10.1",
     "react": "^0.14.9",
     "react-dom": "^0.14.9",
